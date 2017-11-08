@@ -1,0 +1,5 @@
+Question 3:
+
+Decorator deswign pattern will be used here as it allows to add new functionality to an existing object without changing its structure. 
+
+

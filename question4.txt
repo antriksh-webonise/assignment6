@@ -1,0 +1,15 @@
+Question 4:
+
+Strategy pattern will be used here as it allows us to define family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
+
+Pseudo Code:
+
+1. Create a interface called Sorting which will have function called sorting.
+2. Different sorting algorithms(lets take quicksort, mergesort, bubblesort) need to be encapsulated in different classes and each of these classes will implement Sorting interface.
+   class BubbleSort implements Sorting{
+         sorting(list){
+                sorting logic
+             }  
+         }
+3. Then  create a context class that is used to change the sorting algorithm.
+    Context obj = new Context(new BubbleSort());

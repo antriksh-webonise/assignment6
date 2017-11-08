@@ -1,0 +1,52 @@
+Question 2:
+
+Abstract factory method will be used in this case as we will have a factory class for each sub-class. Then an Abstract Factory class that will return the sub-class based on the input factory class. 
+
+Pseudo Code:
+
+1. Firstly, create a factory called  ComputerFactory which will have methods getChassis() and getCabinet(). 
+2. Then, create ChassisFactory and CabinetFactory that extends ComputerFactory. ChassisFactory will have getChassis() and CabinetFactory will have getCabinet.
+3. Then create interfaces Chassis and Cabinet from ChassisFactory and CabinetFactory respectively.
+4. Then create classes that will implement these interfaces.
+   
+public interface Chassis {
+   void method1();
+}
+
+public interface Cabinet {
+   void method2();
+}
+
+class TowerChassis implements Chassis{
+     void method1() 
+}
+
+class DesktopCabinet implements Cabinet{
+     void method2();
+}
+
+abstract class ComputerFactory {
+   abstract Chassis getChassis();
+   abstract Cabinet getCabinet() ;
+}
+
+
+class ChassisFactory extends ComputerFactory {
+
+}
+
+class CabinetFactory extends ComputerFactory {
+
+}
+
+5. Create a Factory class to get factories by passing arguements like Chassis or Cabinet.
+
+
+
+
+
+
+
+
+
+

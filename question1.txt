@@ -1,0 +1,17 @@
+Question 1:
+
+Composite design pattern will be used to represent whole-part hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+
+Pseudo Code:
+
+1. Firstly, create a base component or interface which will have methods common to all the objects.
+   interface Equipment{
+            netPrice();
+            powerConsumption();
+   }
+2.Then create classes that implements this interface.
+    class Component implements Equipment
+3.Then create a SubComponent classes that implement Component which has the method to add the sub components like the bus that incorporates the network card.
+4. Use the objects created from this class to call the methods netPrice() and powerConsumption(). 
+
+
